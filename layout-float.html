@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Float</title>
+  <style>
+    header img{
+      width:100px;
+    }
+    main img{
+      width:200px;
+    }
+    header{
+      background:orange;
+    }
+    #header-logo{ 
+      float:left;
+    }
+    #header-text{
+      float:right;
+      text-align:center;
+      width: 100%;
+    }
+    header::after, #content-wrapper::after{
+      display:table;
+      clear:both;
+      content:"";
+    }
+    nav ul{
+      margin-left: -2.5em;
+    }
+    nav ul li{
+      list-style-type:none;
+      background: green;
+      padding:len;
+    }
+    nav ul li:hover {
+      list-style-type:none;
+      background: rgb(156, 179, 156);
+      padding:len;
+    }
+    nav ul li a:{
+      text-decoration:none;
+    }
+
+    nav{
+      width:30%
+      color: white;
+      background:grey;
+
+    }
+    li a{
+      color: white;
+    }
+    main{
+      background: yellow;
+    }
+    footer{
+      background: black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="header-logo">
+      <img src="hacktiv8.png" alt="logo hactiv8"/>
+    </div>
+  
+    <div id="header-text">
+      <h1>PT Hacktiv8 Indonesia</h1>
+    </div>
+  </header>
+
+    <nav>
+     <ul>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+        <li><a href="#">Menu 4</a></li>
+     </ul>
+    </nav>
+
+  <main>
+    <h2>Judul 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident in similique soluta, ipsa, eligendi quo qui eveniet debitis omnis at adipisci, repellat numquam dolore eos necessitatibus consectetur minus deleniti? <img src="contohgambar2.jpg" alt="Contoh Gambar 2"/></p>
+    <h2>Judul 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident in similique soluta, ipsa, eligendi quo qui eveniet debitis omnis at adipisci, repellat numquam dolore eos necessitatibus consectetur minus deleniti?</p>
+  </main>
+
+  <footer>
+    text 
+  </footer>
+</body>
+</html>
